@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>springmvcdemo Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.version>4.3.1.RELEASE</spring.version>
@@ -68,10 +69,7 @@
       <artifactId>aspectjweaver</artifactId>
       <version>1.7.1</version>
     </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-aspects</artifactId>
-    </dependency>
+
 
 
 
@@ -128,8 +126,33 @@
 
 
 
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.3</version>
+    </dependency>
+
+
+
+
+
+
+
+
+
+
   </dependencies>
   <build>
     <finalName>springmvcdemo</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
