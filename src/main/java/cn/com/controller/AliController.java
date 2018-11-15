@@ -27,7 +27,7 @@ public class AliController
         log.info(df.format(new Date()));
 
         //new Pict().pic();;
-        return "index";
+        return "z";
 
     }
 }
